@@ -1,0 +1,19 @@
+{
+    "name": "judges119/monozalgo",
+    "version": "0.0.1",
+    "keywords": ["zalgo", "log", "monolog", "help", "me"],
+    "license": "MIT",
+    "require": {
+        "php" : ">=5.4.0",
+        "mdwheele/zalgo": "^0.2.0"
+    },
+    "require-dev": {
+        "monolog/monolog": "~1",
+        "phpunit/phpunit": "~4.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Judges119\\Monolog\\": "src"
+        }
+    }
+}
