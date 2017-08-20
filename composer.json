@@ -1,7 +1,8 @@
 {
     "name": "judges119/monozalgo",
-    "version": "0.0.1",
-    "keywords": ["zalgo", "log", "monolog", "help", "me"],
+    "version": "0.0.2",
+    "description": "Speak the prophecies of Zalgo into your favourite logging framework.",
+    "keywords": ["zalgo", "logging", "monolog"],
     "license": "MIT",
     "require": {
         "php" : ">=7.0.0",
