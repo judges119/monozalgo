@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 /**
  * Normalises log output before turning it into prophecies of he who waits behind the curtain.
  *
@@ -32,7 +33,7 @@ class ZalgoFormatter implements FormatterInterface
     /**
      * {@inheritdoc}
      */
-    public function format(array $record)
+    public function format(array $record): string
     {
         return $this->zalgo->speaks($record['message']);
     }
@@ -40,7 +41,7 @@ class ZalgoFormatter implements FormatterInterface
     /**
      * {@inheritdoc}
      */
-    public function formatBatch(array $records)
+    public function formatBatch(array $records): array
     {
         foreach ($records as $key => $record) {
             $records[$key] = $this->format($record);
